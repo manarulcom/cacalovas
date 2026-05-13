@@ -1,0 +1,108 @@
+.section {
+  padding: 6rem 0;
+  background: #FFFFFF;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.ctaCard {
+  text-align: center;
+  position: relative;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.badge {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #B5735F;
+  background: transparent;
+  padding: 0.4rem 1.25rem;
+  border-radius: 9999px;
+  border: 1px solid #EDD5CB;
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 500;
+  color: #3D2420;
+  line-height: 1.15;
+  margin-bottom: 1.25rem;
+}
+
+.desc {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1rem;
+  color: #8C6A64;
+  line-height: 1.6;
+  margin: 0 auto 2.5rem;
+  max-width: 480px;
+}
+
+.metaWrap {
+  margin-bottom: 3rem;
+  padding-top: 2rem;
+  border-top: 1px dashed #EDD5CB;
+  width: 100%;
+  max-width: 300px;
+}
+
+.metaItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.85rem;
+  color: #8C6A64;
+}
+
+.waBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: #3D2420;
+  color: white;
+  padding: 1.1rem 2.5rem;
+  border-radius: 9999px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 1.5px solid #3D2420;
+}
+
+.waBtn:hover {
+  transform: translateY(-2px);
+  background: #B5735F;
+  border-color: #B5735F;
+  box-shadow: 0 12px 32px rgba(181, 115, 95, 0.2);
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 4rem 0;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .waBtn {
+    width: 100%;
+    justify-content: center;
+  }
+}

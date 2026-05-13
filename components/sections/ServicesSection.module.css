@@ -1,0 +1,130 @@
+.section { 
+  padding: 6rem 0; 
+  background: #FFFFFF;
+}
+
+.container { 
+  max-width: 900px; 
+  margin: 0 auto; 
+  padding: 0 1.5rem; 
+}
+
+.header { 
+  text-align: center;
+  margin-bottom: 3.5rem; 
+}
+
+.title {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(2.25rem, 4vw, 3rem);
+  font-weight: 500;
+  color: #3D2420;
+  margin-top: 0.5rem;
+}
+
+.subtitle {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.95rem;
+  color: #8C6A64;
+  line-height: 1.6;
+}
+
+/* ── Pill Cards Layout ── */
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  max-width: 650px;
+  margin: 0 auto 3rem;
+}
+
+.pillCard {
+  display: flex;
+  align-items: center;
+  padding: 1.25rem 1.5rem;
+  border-radius: 24px;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pillCard:hover {
+  transform: translateY(-4px);
+}
+
+.pillIconBox {
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  margin-right: 1.25rem;
+  flex-shrink: 0;
+}
+
+.pillText {
+  flex-grow: 1;
+}
+
+.cardTitle {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+  letter-spacing: -0.01em;
+}
+
+.cardDesc {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+
+/* ── Bottom CTA ── */
+.bottomCta {
+  text-align: center;
+}
+
+.btnOutline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #3D2420;
+  padding: 0.9rem 2rem;
+  border-radius: 9999px;
+  border: 1.5px solid #EDD5CB;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  background: white;
+}
+
+.btnOutline:hover {
+  border-color: #3D2420;
+  background: #FDF5F0;
+}
+
+/* ── Responsive ── */
+@media (max-width: 640px) {
+  .section { padding: 4rem 0; }
+  
+  .pillCard {
+    padding: 1.1rem 1.25rem;
+    border-radius: 20px;
+  }
+  
+  .pillIconBox {
+    width: 50px;
+    height: 50px;
+    font-size: 1.4rem;
+    margin-right: 1rem;
+    border-radius: 14px;
+  }
+  
+  .cardTitle { font-size: 1.05rem; }
+  .cardDesc { font-size: 0.8rem; }
+}

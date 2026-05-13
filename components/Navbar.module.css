@@ -1,0 +1,80 @@
+.navbar {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+  padding: 1.25rem 0;
+  background: rgba(253,245,240,0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid transparent;
+  transition: all 0.4s ease;
+  /* Hidden by default — revealed after hero */
+  opacity: 0;
+  transform: translateY(-100%);
+  pointer-events: none;
+}
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: all;
+}
+.scrolled {
+  background: rgba(253,245,240,0.97);
+  border-bottom-color: #EDD5CB;
+  padding: 0.875rem 0;
+  box-shadow: 0 1px 16px rgba(180,100,80,0.06);
+}
+.container {
+  max-width: 1100px; margin: 0 auto; padding: 0 1.5rem;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.logo {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.6rem; font-weight: 600; font-style: italic;
+  color: #3D2420; text-decoration: none;
+  letter-spacing: 0.02em;
+}
+.logo em { font-style: italic; }
+.nav { display: flex; align-items: center; gap: 2.5rem; }
+.navLink {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.8rem; font-weight: 500;
+  letter-spacing: 0.12em; text-transform: uppercase;
+  color: #3D2420; text-decoration: none;
+  transition: color 0.25s ease;
+}
+.navLink:hover { color: #B5735F; }
+
+.btnBooking {
+  background: #3D2420;
+  color: #FDF5F0 !important;
+  padding: 0.65rem 1.25rem;
+  border-radius: 9999px;
+  transition: all 0.3s ease;
+}
+.btnBooking:hover {
+  background: #5C3028;
+  transform: translateY(-2px);
+}
+
+.hamburger {
+  display: none; flex-direction: column; gap: 5px;
+  background: none; border: none; cursor: pointer; padding: 4px;
+}
+.hamburger span {
+  display: block; width: 22px; height: 1.5px;
+  background: #3D2420; border-radius: 2px; transition: all 0.3s ease;
+}
+.hamburger.active span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+.hamburger.active span:nth-child(2) { opacity: 0; }
+.hamburger.active span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+
+@media (max-width: 768px) {
+  .hamburger { display: flex; }
+  .nav {
+    position: fixed; top: 0; right: -100%; width: 70%; max-width: 280px; height: 100vh;
+    background: #FDF5F0; flex-direction: column; align-items: flex-start;
+    padding: 6rem 2rem 2rem; gap: 2rem;
+    transition: right 0.4s ease;
+    border-left: 1px solid #EDD5CB;
+  }
+  .nav.open { right: 0; }
+  .navLink { font-size: 1rem; }
+}

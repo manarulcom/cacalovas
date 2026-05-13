@@ -1,0 +1,217 @@
+/* ── Hero ── */
+.hero {
+  background: #FFFFFF;
+  padding: 9rem 1.5rem 4rem;
+  text-align: center;
+  border-bottom: 1px solid #EDD5CB;
+}
+.heroInner { max-width: 620px; margin: 0 auto; }
+.heroLabel {
+  display: inline-block;
+  font-family: 'DM Sans', sans-serif; font-size: 0.7rem; font-weight: 600;
+  letter-spacing: 0.25em; text-transform: uppercase;
+  color: #B5735F;
+  background: #FDF5F0;
+  border: 1px solid #EDD5CB;
+  padding: 0.35rem 1.25rem;
+  border-radius: 9999px;
+  margin-bottom: 1.5rem;
+}
+.heroTitle {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(2.5rem, 6vw, 3.75rem); font-weight: 500;
+  color: #3D2420; line-height: 1.1; margin-bottom: 1.25rem;
+}
+.heroTitle em { font-style: italic; color: #B5735F; }
+.heroDesc {
+  font-family: 'DM Sans', sans-serif; font-size: 0.95rem;
+  color: #9A7A73; line-height: 1.85;
+}
+
+/* ── Container ── */
+.container { max-width: 1000px; margin: 0 auto; padding: 0 1.5rem; }
+
+/* ── Notice ── */
+.noticeSection { padding: 3rem 0 0; background: #FDF5F0; }
+.noticeCard {
+  display: flex; gap: 1.5rem; align-items: flex-start;
+  background: white; border: 1.5px solid #EDD5CB;
+  border-radius: 20px; padding: 2rem 2.25rem;
+}
+.noticeIcon { font-size: 2rem; flex-shrink: 0; margin-top: 2px; }
+.noticeTitle {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.75rem; font-weight: 600; font-style: italic;
+  color: #3D2420; margin-bottom: 0.75rem;
+}
+.noticeText {
+  font-family: 'DM Sans', sans-serif; font-size: 0.9rem;
+  color: #5C3D35; line-height: 1.85; margin-bottom: 0.75rem;
+}
+.noticeRed { color: #C0392B; font-weight: 600; }
+.noticeGold { color: #B8860B; font-weight: 600; }
+.noticeSub { font-family: 'DM Sans', sans-serif; font-size: 0.875rem; color: #9A7A73; margin-bottom: 0.5rem; }
+.noticeCredit { font-family: 'DM Sans', sans-serif; font-size: 0.775rem; color: #C4A99F; font-style: italic; }
+
+/* ── Tabs ── */
+.tabSection { padding: 2.5rem 0 5rem; background: #FDF5F0; }
+.tabs {
+  display: flex; gap: 0.5rem; flex-wrap: wrap;
+  margin-bottom: 3rem;
+  background: white;
+  border: 1px solid #EDD5CB;
+  border-radius: 9999px;
+  padding: 0.4rem;
+  width: fit-content;
+}
+.tab {
+  background: transparent; border: none; color: #9A7A73;
+  padding: 0.6rem 1.5rem; border-radius: 9999px;
+  font-family: 'DM Sans', sans-serif; font-size: 0.85rem; font-weight: 500;
+  cursor: pointer; transition: all 0.25s ease;
+}
+.tab:hover { color: #3D2420; }
+.tabActive { background: #3D2420; color: white; font-weight: 600; }
+
+.tabContent { animation: fadeIn 0.3s ease; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+
+.tabHeader { margin-bottom: 2.5rem; }
+.tabTitle {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 2.25rem; font-weight: 500; color: #3D2420; margin-bottom: 0.4rem;
+}
+.tabSubtitle { font-family: 'DM Sans', sans-serif; font-size: 0.875rem; color: #9A7A73; }
+
+/* ── Make Up Only ── */
+.muoGrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; margin-bottom: 2.5rem; }
+.muoCard {
+  background: white; border: 1.5px solid #EDD5CB; border-radius: 18px;
+  padding: 1.75rem 1.5rem; transition: all 0.3s ease;
+  display: flex; flex-direction: column;
+}
+.muoCard:hover { box-shadow: 0 8px 28px rgba(180,100,80,0.1); transform: translateY(-3px); border-color: #D4A090; }
+.muoTop { margin-bottom: 1.25rem; }
+.muoTitle { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.5rem; font-weight: 500; color: #3D2420; margin-bottom: 0.4rem; }
+.muoPrice {
+  font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.6rem; font-weight: 600;
+  color: #B5735F;
+}
+.includeList { list-style: none; display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 1.75rem; flex: 1; }
+.includeList li { font-family: 'DM Sans', sans-serif; font-size: 0.85rem; color: #7A5A53; padding-left: 1.25rem; position: relative; line-height: 1.5; }
+.includeList li::before { content: '✓'; position: absolute; left: 0; color: #B5735F; font-weight: 700; font-size: 0.75rem; }
+
+/* ── Wedding Packages ── */
+.weddingGrid { display: flex; flex-direction: column; gap: 1.25rem; }
+.pkgCard {
+  background: white; border: 1px solid #EDD5CB; border-radius: 20px;
+  padding: 2rem 2.25rem; position: relative; transition: all 0.3s ease;
+}
+.pkgCard:hover { box-shadow: 0 8px 28px rgba(180,100,80,0.08); border-color: #D4A090; }
+.pkgPopular { border-color: #B5735F; border-width: 1.5px; }
+.pkgBadge {
+  position: absolute; top: -13px; left: 2rem;
+  background: #B5735F; color: white;
+  font-family: 'DM Sans', sans-serif; font-size: 0.65rem; font-weight: 700;
+  letter-spacing: 0.15em; text-transform: uppercase;
+  padding: 0.3rem 1rem; border-radius: 9999px;
+}
+.pkgHeader {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px dashed #EDD5CB;
+}
+.pkgName { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.75rem; font-weight: 500; color: #3D2420; }
+.pkgSubtitle { font-family: 'DM Sans', sans-serif; font-size: 0.8rem; color: #9A7A73; margin-top: 3px; }
+.pkgPrice {
+  font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.75rem; font-weight: 600;
+  color: #B5735F; white-space: nowrap; text-align: right;
+}
+.pkgList {
+  list-style: none;
+  display: grid; grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem 2rem; margin-bottom: 1.5rem;
+}
+.pkgList li { font-family: 'DM Sans', sans-serif; font-size: 0.845rem; color: #7A5A53; padding-left: 1.25rem; position: relative; line-height: 1.55; }
+.pkgList li::before { content: '✦'; position: absolute; left: 0; color: #D4A090; font-size: 0.55rem; top: 5px; }
+
+/* Addons */
+.addonBox { background: #FDF5F0; border-radius: 10px; padding: 0.875rem 1.25rem; margin-bottom: 1.25rem; }
+.addonLabel { font-family: 'DM Sans', sans-serif; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #9A7A73; display: block; margin-bottom: 0.4rem; }
+.addonItem { font-family: 'DM Sans', sans-serif; font-size: 0.825rem; color: #B5735F; font-weight: 500; }
+
+/* ── Additional Services ── */
+.addServiceGrid { display: flex; flex-direction: column; gap: 0.65rem; }
+.addServiceCard {
+  display: flex; justify-content: space-between; align-items: center; gap: 1rem;
+  background: white; border: 1px solid #EDD5CB; border-radius: 12px;
+  padding: 1rem 1.5rem; transition: all 0.25s ease; flex-wrap: wrap;
+}
+.addServiceCard:hover { border-color: #B5735F; }
+.addServiceName { font-family: 'DM Sans', sans-serif; font-size: 0.9rem; font-weight: 500; color: #3D2420; }
+.addServiceRight { display: flex; flex-direction: column; align-items: flex-end; gap: 1px; }
+.addServicePrice { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.1rem; font-weight: 600; color: #B5735F; }
+.addServiceNote { font-family: 'DM Sans', sans-serif; font-size: 0.7rem; color: #9A7A73; }
+.addServiceNote2 { font-family: 'DM Sans', sans-serif; font-size: 0.825rem; color: #9A7A73; padding: 0.5rem 0; font-style: italic; }
+
+/* ── T&C Box ── */
+.tncBox {
+  background: #3D2420; border-radius: 16px;
+  padding: 2rem 2.25rem; margin-top: 2.5rem;
+}
+.tncTitle { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.35rem; font-weight: 500; color: #F0D8CE; margin-bottom: 1.25rem; }
+.tncList { list-style: none; display: flex; flex-direction: column; gap: 0.75rem; }
+.tncList li { font-family: 'DM Sans', sans-serif; font-size: 0.85rem; color: rgba(240,216,206,0.8); line-height: 1.7; padding-left: 1.25rem; position: relative; }
+.tncList li::before { content: '•'; position: absolute; left: 0; color: #D4A090; font-weight: 700; }
+
+/* ── WA Buttons ── */
+.waBtn {
+  display: inline-flex; align-items: center; gap: 0.4rem;
+  font-family: 'DM Sans', sans-serif; font-size: 0.825rem; font-weight: 600;
+  color: #B5735F; border: 1.5px solid #D4A090;
+  padding: 0.65rem 1.5rem; border-radius: 9999px;
+  text-decoration: none; transition: all 0.3s ease; margin-top: auto;
+  align-self: flex-start;
+}
+.waBtn:hover { background: #B5735F; color: white; border-color: #B5735F; }
+.waBtnPrimary { background: #3D2420; color: white; border-color: #3D2420; }
+.waBtnPrimary:hover { background: #6B4038; border-color: #6B4038; }
+
+/* ── Bottom CTA ── */
+.ctaSection {
+  padding: 5rem 1.5rem;
+  background: #FFFFFF;
+  text-align: center;
+  border-top: 1px solid #EDD5CB;
+}
+.ctaInner { max-width: 540px; margin: 0 auto; }
+.ctaTitle { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 2.25rem; font-weight: 500; color: #3D2420; margin-bottom: 0.75rem; }
+.ctaDesc { font-family: 'DM Sans', sans-serif; font-size: 0.9rem; color: #9A7A73; margin-bottom: 2rem; line-height: 1.8; }
+.ctaBtn {
+  display: inline-flex; align-items: center; gap: 0.625rem;
+  background: #3D2420; color: white;
+  padding: 1rem 2.5rem; border-radius: 9999px;
+  font-family: 'DM Sans', sans-serif; font-size: 1rem; font-weight: 600;
+  text-decoration: none; transition: all 0.3s ease;
+}
+.ctaBtn:hover { transform: translateY(-2px); background: #B5735F; box-shadow: 0 8px 24px rgba(181,115,95,0.25); }
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .hero { padding: 8rem 1.5rem 3rem; }
+  .muoGrid { grid-template-columns: 1fr; }
+  .pkgList { grid-template-columns: 1fr; }
+  .pkgHeader { grid-template-columns: 1fr; }
+  .pkgPrice { text-align: left; }
+  .noticeCard { flex-direction: column; }
+  .tabs { width: 100%; border-radius: 16px; }
+  .tab { flex: 1; text-align: center; }
+}
+@media (max-width: 500px) {
+  .tabs { gap: 0.25rem; padding: 0.3rem; }
+  .tab { padding: 0.5rem 0.75rem; font-size: 0.8rem; }
+}

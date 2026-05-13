@@ -1,0 +1,15 @@
+.section { padding: 5rem 0; background: #FFFFFF; }
+.container { max-width: 800px; margin: 0 auto; padding: 0 1.5rem; text-align: center; }
+.header { margin-bottom: 2.5rem; }
+.cards { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; }
+.card { border-radius: 16px; padding: 2.5rem 2rem; text-decoration: none; text-align: center; transition: all 0.3s ease; display: flex; flex-direction: column; align-items: center; gap: 0.5rem; }
+.card:hover { transform: translateY(-4px); }
+.ig { background: #FDE8E0; border: 1.5px solid #E8BFB5; }
+.ig:hover { box-shadow: 0 8px 28px rgba(180,100,80,0.18); }
+.tt { background: #E8EEF5; border: 1.5px solid #B5C5D8; }
+.tt:hover { box-shadow: 0 8px 28px rgba(80,100,180,0.14); }
+.socialIcon { font-size: 2.25rem; margin-bottom: 0.5rem; }
+.socialName { font-family: 'DM Sans', sans-serif; font-size: 1rem; font-weight: 700; color: #3D2420; }
+.socialHandle { font-family: 'DM Sans', sans-serif; font-size: 0.875rem; color: #9A7A73; }
+.socialDesc { font-family: 'DM Sans', sans-serif; font-size: 0.8rem; color: #9A7A73; line-height: 1.5; }
+@media (max-width: 500px) { .cards { grid-template-columns: 1fr; } }

@@ -1,0 +1,91 @@
+.section { padding: 5rem 0; background: #FFFFFF; }
+.container { max-width: 800px; margin: 0 auto; padding: 0 1.5rem; }
+.header { text-align: center; margin-bottom: 2.5rem; }
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+
+.socialCard {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 2.5rem;
+  border-radius: 24px;
+  text-decoration: none;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 1;
+}
+.socialCard:hover {
+  transform: translateY(-4px);
+}
+
+.cardBg {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: -1;
+  transition: transform 0.4s ease;
+}
+.socialCard:hover .cardBg {
+  transform: scale(1.05);
+}
+
+.igCard { box-shadow: 0 10px 30px rgba(225,48,108,0.15); }
+.igCard .cardBg {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+.igCard:hover { box-shadow: 0 15px 40px rgba(225,48,108,0.3); }
+
+.tkCard { box-shadow: 0 10px 30px rgba(0,0,0,0.15); }
+.tkCard .cardBg {
+  background: linear-gradient(135deg, #000000 0%, #252525 100%);
+}
+.tkCard:hover { box-shadow: 0 15px 40px rgba(0,0,0,0.25); }
+
+.cardContent {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  color: white;
+}
+
+.iconWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255,255,255,0.2);
+  border-radius: 12px;
+  width: 56px;
+  height: 56px;
+  backdrop-filter: blur(4px);
+}
+
+.cardTitle {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.cardSubtitle {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+  opacity: 0.9;
+  margin: 0;
+  margin-top: 0.2rem;
+}
+
+.cardArrow {
+  font-size: 1.5rem;
+  color: white;
+  opacity: 0.7;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.socialCard:hover .cardArrow {
+  transform: translateX(4px);
+  opacity: 1;
+}
+
+@media (max-width: 640px) {
+  .grid { grid-template-columns: 1fr; }
+  .socialCard { padding: 1.5rem 1.5rem; }
+}
