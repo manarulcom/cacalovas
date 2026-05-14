@@ -13,6 +13,9 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Cacalovas" }],
   creator: "Cacalovas",
+  verification: {
+    google: "62zh0RrMM2ZuDJ9op72e_BPeVTI32x47LIS5I2vnlpA",
+  },
   metadataBase: new URL("https://cacalovas.com"),
   alternates: { canonical: "https://cacalovas.com" },
   openGraph: {
