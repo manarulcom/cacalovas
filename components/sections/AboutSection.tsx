@@ -38,7 +38,7 @@ export default function AboutSection() {
               Hi, saya <em>Cacalovas!</em>
             </h2>
             <p className={styles.para}>
-              <strong>Low Visual &amp; Dreamy Skin Specialist.</strong> Make Up Artist spesialis riasan <strong>timeless &amp; natural</strong> yang telah berkecimpung di dunia makeup sejak 2018 (usia 18 tahun). Selain sebagai MUA, juga berperan sebagai <strong>konsultan wedding &amp; fashion brides.</strong>
+              Make Up Artist spesialis riasan <strong>timeless &amp; natural</strong> sekaligus dikenal sebagai <strong>Low Visual &amp; Dreamy Skin Specialist</strong>, yang telah berkecimpung di dunia makeup sejak 2018 (usia 18 tahun). Selain sebagai MUA, juga berperan sebagai <strong>konsultan wedding &amp; fashion brides.</strong>
             </p>
             <p className={styles.para}>
               Telah dipercaya oleh ratusan klien di <strong>Purwokerto, Banjarnegara,</strong> dan <strong>Wonosobo</strong> untuk tampil terbaik di momen paling berharga mereka.
