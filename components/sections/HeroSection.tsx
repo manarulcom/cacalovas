@@ -64,9 +64,14 @@ export default function HeroSection() {
           >
             About Me
           </ScrollLink>
-          <ScrollLink href="#signature" className={styles.btnOutline}>
-            Signatures
-          </ScrollLink>
+          <a 
+            href="https://wa.me/6285166662347" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className={styles.btnOutline}
+          >
+            WhatsApp
+          </a>
         </div>
 
       </div>
